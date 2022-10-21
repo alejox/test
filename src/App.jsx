@@ -3,11 +3,11 @@ import { render } from 'react-dom';
 import axios from 'axios';
 import Navbar from './components/navbar/Navbar';
 import Lesson from './views/lessons/Lesson';
-import Activities from './views/Activities/Activities';
+import Activities from './views/activities/Activities';
 import Home from './views/home/Home';
 import Login from './views/login/Login';
 import { ProtectedRoutes } from './ProtectedRoutes';
-import TaskDetail from './views/Activities/TaskDetail';
+import TaskDetail from './views/activities/TaskDetail';
 
 function App() {
   axios.interceptors.request.use(
