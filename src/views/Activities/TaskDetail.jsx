@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { Link, Navigate, useParams } from 'react-router-dom';
-import './Activities.scss';
+import './activities.scss';
 
 const TaskDetail = () => {
   const { id } = useParams();
