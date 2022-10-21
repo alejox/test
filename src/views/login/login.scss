@@ -1,0 +1,107 @@
+.login {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  text-align: center;
+  &__blur {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url('../../assets/img/bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(3px) saturate(20%) opacity(82%);
+  }
+  &__title {
+    color: black;
+    font-size: 68px;
+    margin-bottom: 40px;
+  }
+  &__card {
+    max-width: 700px;
+    width: 90%;
+    background-color: rgba(236, 236, 236, 0.829);
+    padding: 48px;
+    border-radius: 8px;
+    &-title {
+      color: black;
+      font-size: 34px;
+      margin: 40px auto;
+    }
+  }
+  &__form {
+    &-label {
+      margin: 24px 0;
+      width: 100%;
+      display: block;
+      text-align: left;
+      &::after,
+      :active,
+      :focus,
+      :visited,
+      :focus-within {
+        border: none;
+      }
+    }
+    &-input {
+      outline: none;
+      width: 100%;
+      border: none;
+      background-color: transparent;
+      padding: 12px;
+      font-weight: 300;
+      font-size: 16px;
+      color: purple;
+      border-bottom: 1px solid rgba(19, 16, 16, 0.507);
+    }
+    &-link {
+      text-decoration: none;
+      text-align: right;
+      display: block;
+      margin: 24px 0;
+      position: relative;
+      top: 0;
+      transition: top ease 0.1s;
+      &:hover {
+        color: aqua;
+        top: -2px;
+      }
+    }
+    &-button {
+      padding: 12px;
+      display: block;
+      border-radius: 50px;
+      border: none;
+      background-color: purple;
+      color: white;
+      cursor: pointer;
+      text-decoration: none;
+      margin-top: 40px;
+      width: 100%;
+    }
+  }
+  &__text {
+    margin-top: 24px;
+    color: white;
+    font-weight: 300;
+  }
+  &__link {
+    position: relative;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: large;
+    margin-left: 20px;
+    top: 0;
+    transition: top ease 0.1s;
+    color: aqua;
+    &:hover {
+      color: purple;
+      top: -2px;
+    }
+  }
+}

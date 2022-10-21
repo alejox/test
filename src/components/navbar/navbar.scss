@@ -1,0 +1,14 @@
+.link {
+  display: block;
+  padding: var(0.5rem) var(0);
+  font-size: var(--bs-nav-link-font-size);
+  font-weight: var(--bs-nav-link-font-weight);
+  color: rgba(0, 0, 0, 0.55);
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  &:hover{
+    color: black;
+  }
+}
+

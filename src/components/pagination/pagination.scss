@@ -1,0 +1,22 @@
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px auto;
+  button {
+    width: 34px;
+    height: 34px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: rgba(236, 236, 235, 0.781);
+    margin: 12px;
+    &.active, &:hover {
+      font-weight: 700;
+      background-color: purple;
+      color: #fff;
+    }
+  }
+}
+
